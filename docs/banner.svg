@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd9e4"/>
+      <stop offset="1" stop-color="#f48fb1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+  <g fill="#fff" opacity="0.35">
+    <circle cx="1100" cy="60" r="120"/>
+    <circle cx="60" cy="290" r="90"/>
+  </g>
+  <!-- полароиды -->
+  <g transform="translate(830 70) rotate(-8)">
+    <rect width="150" height="175" rx="8" fill="#fff"/>
+    <rect x="12" y="12" width="126" height="120" rx="4" fill="#fbc2d4"/>
+    <path d="M75 60 c-9 -16 -34 -12 -34 8 c0 15 20 27 34 38 c14 -11 34 -23 34 -38 c0 -20 -25 -24 -34 -8z" fill="#ef5f8c"/>
+  </g>
+  <g transform="translate(960 85) rotate(7)">
+    <rect width="150" height="175" rx="8" fill="#fff"/>
+    <rect x="12" y="12" width="126" height="120" rx="4" fill="#c9e4ff"/>
+    <circle cx="75" cy="60" r="22" fill="#ffd36e"/>
+    <path d="M12 132 L60 88 L92 112 L138 76 L138 132 Z" fill="#8cc9a0"/>
+  </g>
+  <text x="80" y="135" fill="#7a1f45" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="60" font-weight="700">Memory Garden</text>
+  <text x="82" y="185" fill="#8f3a5c" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26">Интерактивный подарок: сад из ваших общих фото и видео,</text>
+  <text x="82" y="220" fill="#8f3a5c" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26">музыка, признание и маленькие сюрпризы</text>
+</svg>

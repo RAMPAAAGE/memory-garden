@@ -1,0 +1,37 @@
+# Собирает Memory-Garden.exe для Windows и прикладывает его к релизу.
+# Запускается, когда отправлен тег вида v1.0.0, или вручную со вкладки Actions.
+name: Сборка и релиз
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsc
+      - run: npm run dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: memory-garden-windows
+          path: release/Memory-Garden.exe
+      - if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/Memory-Garden.exe
+          body: |
+            ## Скачать
+
+            **Memory-Garden.exe**: программа без установки. Скачай и запусти.
+            Если Windows покажет «Система Windows защитила ваш компьютер», нажми «Подробнее» → «Выполнить в любом случае».

@@ -1,0 +1,50 @@
+[
+  {
+    "source": "example_1.webp",
+    "src": "example_1.webp",
+    "type": "photo",
+    "width": 1600,
+    "height": 1200,
+    "date": "2025-03-10"
+  },
+  {
+    "source": "example_2.webp",
+    "src": "example_2.webp",
+    "type": "photo",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-11"
+  },
+  {
+    "source": "example_3.webp",
+    "src": "example_3.webp",
+    "type": "photo",
+    "width": 1600,
+    "height": 1200,
+    "date": "2025-05-12"
+  },
+  {
+    "source": "example_4.webp",
+    "src": "example_4.webp",
+    "type": "photo",
+    "width": 1600,
+    "height": 1200,
+    "date": "2025-06-13"
+  },
+  {
+    "source": "example_5.webp",
+    "src": "example_5.webp",
+    "type": "photo",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-07-14"
+  },
+  {
+    "source": "example_6.webp",
+    "src": "example_6.webp",
+    "type": "photo",
+    "width": 1600,
+    "height": 1200,
+    "date": "2025-08-15"
+  }
+]
